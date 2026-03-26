@@ -1,210 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V.K.Mani | Data Analyst Portfolio</title>
-
+    <title>Vaikundamani L | Senior Data Analyst</title>
+    
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">V.K.<span class="highlight">Mani</span></a>
+    <!-- Animated Background -->
+    <div class="bg-shapes">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="bg-shape bg-shape-3"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">VAIKUNDAMANI <span class="accent">L</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <span class="badge">Data Analyst & Storyteller</span>
-                <h1>Turning Raw Data into <br> <span class="gradient-text">Business Impact</span></h1>
-                <p>I specialize in SQL, Python, and Tableau to build automated pipelines and interactive dashboards that
-                    drive strategic decision-making.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text reveal">
+                <p class="pre-title">Greetings,</p>
+                <h1>I am <span class="accent">Vaikundamani</span>.</h1>
+                <h2><span class="typing-text"></span><span class="cursor"></span></h2>
+                <p class="hero-description">Transforming complex datasets into actionable business insights to improve operational efficiency, optimize KPIs, and drive cost reduction in production environments.</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Case Studies</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-
-                <div class="tech-stack">
-                    <i class="fa-brands fa-python" title="Python"></i>
-                    <i class="fa-solid fa-database" title="SQL"></i>
-                    <i class="fa-solid fa-chart-simple" title="Power BI"></i>
-                    <i class="fa-brands fa-aws" title="Cloud"></i>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="Vaikundamani_Data_Analyst_Resume.pdf" download="Vaikundamani_L_Resume.pdf" class="btn btn-secondary"><i class="fas fa-file-download"></i> Download Resume</a>
                 </div>
             </div>
-
-            <div class="hero-image">
-                <div class="img-wrapper">
-                    <img src="https://res.cloudinary.com/dtuw5u1wp/image/upload/v1765185458/1764133839321_2_bcyoxw.jpg"
-                        alt="vk Profile">
-                </div>
-                <div class="floating-card">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <div>
-                        <span style="display:block; font-weight:bold; color:white;">98% Accuracy</span>
-                        <span style="font-size:0.8rem; color:#ccc;">in Forecasting</span>
-                    </div>
+            <div class="hero-image reveal">
+                <div class="profile-wrapper">
+                    <!-- Replace the src with your actual profile picture URL -->
+                    <img id="profile-pic" src="https://res.cloudinary.com/dtuw5u1wp/image/upload/v1765185458/1764133839321_2_bcyoxw.jpg" alt="Vaikundamani Profile">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section-pad reveal">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content" aria-labelledby="about-heading">
-                <h2 id="about-heading" class="sr-only">About</h2>
-
-                <!-- English version -->
-                <div class="about-block" data-lang="en">
-                    <p class="lead-text">
-                        Hi — I'm <strong>Vaikundamani L</strong>, a Data Analyst who turns messy data into clear
-                        business decisions.
-                        With a foundation in Statistics and Computer Science and hands-on experience in manufacturing
-                        analytics,
-                        I specialise in exploratory data analysis, forecasting, and interactive dashboards that drive
-                        measurable impact.
-                        My toolkit includes SQL, Python (Pandas), Power BI / Tableau, Excel, and efficient data
-                        pipelines.
-                    </p>
-
-                    <div class="stats-grid" role="list" aria-label="Key statistics">
-                        <div class="stat-box" role="listitem">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
-                        </div>
-
-                        <div class="stat-box" role="listitem">
-                            <h3>40+</h3>
-                            <p>Projects Delivered</p>
-                        </div>
-
-                        <div class="stat-box" role="listitem">
-                            <h3>Multiple TBs</h3>
-                            <p>Data Processed</p>
-                        </div>
-
-                        <div class="stat-box" role="listitem">
-                            <h3>~15%</h3>
-                            <p>Avg Cost / Efficiency Improvement</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="about-section container">
+        <h2 class="section-title reveal">Executive Summary</h2>
+        <div class="about-content">
+            <div class="about-text reveal">
+                <p>Results-driven Senior Data Analyst with <strong>5+ years of experience</strong> within the manufacturing sector. I specialize in translating complex datasets into actionable business insights, enabling strategic decision-making across production environments.</p>
+                <p>My career focus is on KPI optimization, process improvement, and reporting automation. I have a proven track record of achieving up to <strong>40% efficiency gains</strong> and <strong>15% cost reduction</strong> through analytical solutions.</p>
+                <p>Currently expanding my capabilities in <strong>Python</strong> for scalable analytics and data pipeline development to drive further innovation in operational data science.</p>
+                <a href="Vaikundamani_Data_Analyst_Resume.pdf" download="Vaikundamani_L_Resume.pdf" class="btn btn-primary" style="margin-top: 15px;"><i class="fas fa-download"></i> Download Resume</a>
             </div>
+            <div class="about-stats reveal">
+                <div class="stat-card"><span>5+</span> Yrs Exp.</div>
+                <div class="stat-card"><span>40%</span> Efficiency Gain</div>
+                <div class="stat-card"><span>15%</span> Cost Reduction</div>
+            </div>
+        </div>
     </section>
 
-    <section id="experience" class="section-pad bg-darker">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="date">2022 - Present</div>
-                        <h3>Senior Data Analyst</h3>
-                        <h4>TechCorp Solutions</h4>
-                        <p>
-                            <i class="fa-solid fa-caret-right"></i> Spearheaded the migration of legacy Excel reporting
-                            to <strong>Power BI</strong>, saving 15 hours/week.<br>
-                            <i class="fa-solid fa-caret-right"></i> Optimized SQL queries reducing data retrieval time
-                            by <strong>40%</strong>.<br>
-                            <i class="fa-solid fa-caret-right"></i> Led a team of 3 junior analysts.
-                        </p>
-                    </div>
+            <h2 class="section-title reveal">Core Expertise & Tech Stack</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-chart-line"></i> Analysis & Visualization</h3>
+                    <ul>
+                        <li><i class="fab fa-microsoft accent"></i> Power BI</li>
+                        <li><i class="fas fa-file-excel accent"></i> Advanced Excel (Power Query, XLOOKUP)</li>
+                        <li><i class="fas fa-chart-pie accent"></i> Advanced Dashboarding</li>
+                        <li><i class="fas fa-presentation-screen accent"></i> Executive Reporting</li>
+                    </ul>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="date">2020 - 2022</div>
-                        <h3>Junior Data Analyst</h3>
-                        <h4>Retail Global Inc.</h4>
-                        <p>
-                            <i class="fa-solid fa-caret-right"></i> Conducted EDA on customer churn utilizing
-                            <strong>Python (Pandas)</strong>.<br>
-                            <i class="fa-solid fa-caret-right"></i> Created automated email alerts for inventory
-                            shortages.
-                        </p>
-                    </div>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Programming & Data</h3>
+                    <ul>
+                        <li><i class="fab fa-python accent"></i> Python</li>
+                        <li><i class="fas fa-database accent"></i> SQL</li>
+                        <li><i class="fab fa-java accent"></i> Core Java & J2EE</li>
+                        <li><i class="fas fa-network-wired accent"></i> Data Pipeline Enhancement</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-industry"></i> Manufacturing Domain</h3>
+                    <ul>
+                        <li><i class="fas fa-crosshairs accent"></i> KPI Framework Design</li>
+                        <li><i class="fas fa-magnifying-glass-chart accent"></i> Root Cause Analysis</li>
+                        <li><i class="fas fa-gears accent"></i> Process Optimization</li>
+                        <li><i class="fas fa-check-double accent"></i> Quality Improvement</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-server"></i> Systems & Methods</h3>
+                    <ul>
+                        <li><i class="fas fa-database accent"></i> MySQL</li>
+                        <li><i class="fab fa-linux accent"></i> Linux</li>
+                        <li><i class="fas fa-shield-halved accent"></i> Data Validation Frameworks</li>
+                        <li><i class="fas fa-users accent"></i> Stakeholder Engagement</li>
+                    </ul>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section-pad reveal">
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section container">
+        <h2 class="section-title reveal">Professional Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Apollo Tyre's Ltd</h3>
+                    <p class="role">Senior Data Analyst</p>
+                    <p class="duration"><i class="far fa-calendar-alt"></i> 2020 - Present &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+                    <ul>
+                        <li><span class="impact-tag"><i class="fas fa-arrow-up"></i> 20% Efficiency</span> Led extensive data analysis projects, uncovering insights that saved approximately <span class="highlight">10 lakh annually</span>.</li>
+                        <li>Developed and launched dynamic KPI dashboards (Excel & Power BI), increasing visibility by <span class="highlight">30% across three departments</span>.</li>
+                        <li><span class="impact-tag"><i class="fas fa-arrow-down"></i> 35% Scrap Reduction</span> Performed thorough root cause analyses of production inefficiencies, equating to <span class="highlight">10 lakh in annual savings</span>.</li>
+                        <li>Established automated reporting systems, decreasing manual effort by 40% and saving <span class="highlight">60 hours per month</span>.</li>
+                        <li>Collaborated with cross-functional teams (production, quality, operations) to align analytics with business goals, enhancing process efficiency by 25%.</li>
+                        <li>Delivered executive-level data narratives and insights to senior leadership, shaping strategic initiatives.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Future experience goes here -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title reveal">Key Projects</h2>
             <div class="projects-grid">
 
-                <div class="project-card">
-                    <div class="card-img">
-                        <div style="width:100%; height:100%; background: linear-gradient(45deg, #4f46e5, #ec4899);">
-                        </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Enterprise KPI Dashboard & DWM Tracking</h3>
+                    <p>Developed a scalable KPI monitoring system for Daily Work Management (DWM) enhancing operational transparency and response times.</p>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                        <span>DWM</span>
                     </div>
-                    <div class="card-body">
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Prophet</span>
-                        </div>
-                        <h3>Retail Sales Forecasting</h3>
-                        <p>Predicted quarterly inventory needs with 94% accuracy using Facebook Prophet and historical
-                            sales data.</p>
-                        <a href="#" class="link-btn">View Code <i class="fa-brands fa-github"></i></a>
+                    <div class="project-impact">
+                        <i class="fas fa-rocket"></i> Boosted efficiency by 25% across 5 departments.
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="card-img">
-                        <div style="width:100%; height:100%; background: linear-gradient(45deg, #10b981, #3b82f6);">
-                        </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-filter"></i></div>
+                    <h3>Data Quality & Automation Framework</h3>
+                    <p>Created automated validation pipelines addressing data anomalies like missing values and outliers using statistical analysis and rule-based validation.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Statistical Analysis</span>
+                        <span>100GB+ Data</span>
                     </div>
-                    <div class="card-body">
-                        <div class="tags">
-                            <span>Tableau</span>
-                            <span>SQL</span>
-                        </div>
-                        <h3>Customer Churn Dashboard</h3>
-                        <p>Interactive dashboard identifying at-risk customers, leading to a retention campaign saving
-                            $50k/month.</p>
-                        <a href="#" class="link-btn">View Dashboard <i class="fa-solid fa-chart-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-img">
-                        <div style="width:100%; height:100%; background: linear-gradient(45deg, #f59e0b, #ef4444);">
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="tags">
-                            <span>Pandas</span>
-                            <span>Seaborn</span>
-                        </div>
-                        <h3>Supply Chain Analysis</h3>
-                        <p>Exploratory analysis of shipping routes revealing bottlenecks in the Northeast corridor using
-                            Python.</p>
-                        <a href="#" class="link-btn">View Report <i class="fa-solid fa-file-pdf"></i></a>
+                    <div class="project-impact">
+                        <i class="fas fa-check-circle"></i> Reduced reporting errors by 30%.
                     </div>
                 </div>
 
@@ -212,133 +194,44 @@
         </div>
     </section>
 
-    <section id="skills" class="section-pad bg-darker reveal">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-
-                <div class="skill-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>Data Processing</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>
-                            <div class="skill-info"><span>Python (Pandas/NumPy)</span> <span>95%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:95%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>SQL (PostgreSQL/BigQuery)</span> <span>90%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:90%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>Excel </span> <span>85%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:85%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-chart-pie"></i>
-                        <h3>Visualization</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>
-                            <div class="skill-info"><span>Tableau</span> <span>90%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:90%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>Power BI</span> <span>80%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:80%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>D3.js / Chart.js</span> <span>60%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:60%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <div class="cat-header">
-                        <i class="fa-solid fa-cloud"></i>
-                        <h3>Tools & Cloud</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>
-                            <div class="skill-info"><span>Git / GitHub</span> <span>85%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:85%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>AWS (S3, EC2)</span> <span>70%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:70%"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-info"><span>Jupyter Notebooks</span> <span>95%</span></div>
-                            <div class="progress-bar">
-                                <div class="fill" style="width:95%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="contact-intro reveal">I am open to discussions regarding new opportunities in Manufacturing Data Analytics, operational strategy, and data science implementation.</p>
+        
+        <div class="contact-methods">
+            <div class="contact-card reveal">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:I.vaikundamani@gmail.com">I.vaikundamani@gmail.com</a></p>
             </div>
+            <div class="contact-card reveal">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+919597240371">+91 95972 40371</a></p>
+            </div>
+            <div class="contact-card reveal">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Chennai, Tamil Nadu, India</p>
+            </div>
+        </div>
+
+        <div class="social-links reveal">
+            <a href="https://www.linkedin.com/in/vaikundamani-l/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vaikundamani-l" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://vaikundamani-l.github.io/portfolio/" target="_blank" title="Current Portfolio"><i class="fas fa-globe"></i></a>
         </div>
     </section>
 
-    <section id="contact" class="section-pad reveal">
-        <div class="container contact-container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="text-align: center; color: var(--text-gray); margin-bottom: 2rem;">
-                Looking for a deep dive into your data? Fill out the form below or find me on social media.
-            </p>
-
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="How can I help you?" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
-            </form>
-
-            <div class="socials" style="margin-top: 2rem;">
-                <a href="https://www.linkedin.com/in/vaikundamani-l-8474871a4/"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/vaikundamani-l"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="mailto:l.vaikudamani@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 All rights reserved.</p>
+            <p>&copy; 2024 Vaikundamani L. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Interactive Scripts -->
     <script src="script.js"></script>
 </body>
-
 </html>
